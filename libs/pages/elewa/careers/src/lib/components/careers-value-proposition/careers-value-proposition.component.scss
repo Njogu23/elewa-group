@@ -1,0 +1,113 @@
+.componentdiv {
+	max-width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.container1 {
+	display: inline;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 0%;
+}
+
+.image1 {
+	padding-right: 5%;
+}
+
+.image2 {
+	margin-right: 5%;
+}
+
+.first-image {
+	height: 50vh;
+	object-fit: cover;
+	overflow: hidden;
+	width: 90%;
+	border-radius: 30px;
+}
+
+.second-image {
+	height: 70vh;
+	border-radius: 20px;
+	width: 25vw;
+	object-fit: cover;
+}
+
+.container2 {
+	margin-top: 0%;
+}
+
+.infodiv {
+	width: 90%;
+	margin-top: 10%;
+}
+
+.h1div {
+	margin-bottom: 5%;
+}
+
+h1 {
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 4.5rem;
+}
+
+p {
+	font-family: var(--elewa-group-website-dmsans-regular);
+	font-size: 2rem;
+}
+
+@media (max-width:1500px) {
+	h1 {
+		font-size: 3rem;
+	}
+	
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width:500px) {
+	.componentdiv {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100vw;
+	}
+
+	.container1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container2 {
+		margin-top: 5%;
+	}
+
+	.second-image {
+		min-width: 80vw;
+		height: 40vh;
+	}
+
+	.first-image {
+		min-width: 80vw;
+		border-radius: 20px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.infodiv {
+		min-width: 80vw;
+	}
+}

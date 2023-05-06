@@ -1,29 +1,51 @@
 .body {
+  position: relative;
   background-color: #f4f4f4;
-  border-radius: 2%;
+  border-radius: 0 0 30px 30px;
   margin: 0 0;
   width: 100%;
+  height: fit-content;
 }
+
 .container {
-  margin-top: 2%;
-  margin-left: 8%;
-  margin-right: 8%;
+  position: relative;
+
+  padding-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
 .title {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-weight: var(--elewa-group-website-font-weight-subtitle);
-  font-size: 60px;
+  font-family: var(--elewa-group-website-jeko-title);
+  font-weight: 400;
+  font-size: 4.5rem;
+  padding-top: 50px;
 }
+
 .text {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 35px;
+  font-size: 2rem;
   padding-top: 30px;
+  font-weight: 300;
+  max-width: 70%;
 }
+
 .img {
   border-radius: 2%;
   width: 100%;
   padding-top: 7%;
 }
+
+@media screen  and (max-width: 1500px) {
+  .title {
+    font-size: 3rem;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .container {
     margin-top: 2%;
@@ -32,17 +54,21 @@
     background-color: #f4f4f4;
     text-overflow: hidden;
   }
+
   .title {
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-weight-subtitle);
     font-size: 40px;
   }
+
   .text {
     font-size: medium;
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: 20px;
     padding-top: 30px;
+    max-width: 90%;
   }
+
   .img {
     border-radius: 2%;
     width: 100%;

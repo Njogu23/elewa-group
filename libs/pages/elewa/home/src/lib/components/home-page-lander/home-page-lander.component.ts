@@ -6,8 +6,8 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./home-page-lander.component.scss'],
 })
 export class HomePageLanderComponent {
-  @Input() subtitle = 'THE WAY IN WHICH WE TRAIN IS OUTDATED';
+  @Input() subtitle = 'THE STANDARD FOR PROFESSIONAL TRAINING IS OUTDATED';
   @Input() title = 'We are a group of companies which unlock true human potential.';
-  @Input() backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png';
+  @Input() backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_2400/v1681285764/elewa-group-website/hero-Images/home-page-bg-min_jfkopo.jpg';
   @Input() description = 'Irrespective of origin,nationality, gender, and belief.';
 }

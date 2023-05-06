@@ -11,7 +11,8 @@ export class NextDirective {
   nextFunction(){
     const elm = this.el.nativeElement.parentElement.parentElement.children[1];
     const team = elm.getElementsByClassName("team");
-    elm.append(team[0]);
-    console.log(team);
+    if (team.length > 3 || window.innerWidth < 768) {
+      elm.append(team[0]);
+    }
   }
 }

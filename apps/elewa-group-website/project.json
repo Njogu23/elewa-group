@@ -17,9 +17,13 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/elewa-group-website/src/favicon.ico",
-          "apps/elewa-group-website/src/assets"
+          "apps/elewa-group-website/src/assets",
+          "apps/elewa-group-website/src/sitemap.xml"
         ],
-        "styles": ["apps/elewa-group-website/src/styles.scss"],
+        "styles": [
+          "apps/elewa-group-website/src/styles.scss",
+          "node_modules/aos/dist/aos.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -28,7 +32,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "3mb"
             },
             {
               "type": "anyComponentStyle",

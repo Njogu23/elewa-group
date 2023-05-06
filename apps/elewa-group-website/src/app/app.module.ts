@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
+
+import { IntercomModule } from 'ng-intercom';
 
 import { MaterialDesignModule } from '@iote/bricks-angular';
 
@@ -14,11 +19,21 @@ import { AppRoutingModule } from './app.routing';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
 
     MaterialDesignModule,
 
+    IntercomModule.forRoot({
+      appId: 'rod48tp9',
+      updateOnRouterChange: true
+    }),
+
     RouterModule,
-    ScullyLibModule,
+    ScullyLibModule.forRoot({
+      alwaysMonitor: true,
+    }),
+
+    GoogleTagManagerModule.forRoot({id: 'GTM-NMCRDT5'}),
 
     AppRoutingModule
   ],

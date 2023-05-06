@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="cardSection">
+		<div class="figure" *ngIf="isImage; else noImage">
+		 	<a href="link" target="_blank"><img [src]="figure" alt="description"></a>
+		</div>
+		<ng-template #noImage>
+			<div class="text">
+				<h1>{{figure}}<span>{{valueFigure}}</span></h1>
+				<p class="desc">{{description}}</p>
+			</div>
+		</ng-template>
+	</div>
+</div>

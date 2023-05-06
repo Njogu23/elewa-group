@@ -15,6 +15,8 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"],
     "paths": {
       "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
       "@elewa-group/features/components/banners": [
@@ -35,6 +37,12 @@
       "@elewa-group/pages/elewa/activities": [
         "libs/pages/elewa/activities/src/index.ts"
       ],
+      "@elewa-group/pages/elewa/brands": [
+        "libs/pages/elewa/brands/src/index.ts"
+      ],
+      "@elewa-group/pages/elewa/careers": [
+        "libs/pages/elewa/careers/src/index.ts"
+      ],
       "@elewa-group/pages/elewa/contact": [
         "libs/pages/elewa/contact/src/index.ts"
       ],
@@ -43,8 +51,17 @@
         "libs/pages/elewa/invest/src/index.ts"
       ],
       "@elewa-group/pages/elewa/news": ["libs/pages/elewa/news/src/index.ts"],
+      "@elewa-group/pages/elewa/news-detail": [
+        "libs/pages/elewa/news-detail/src/index.ts"
+      ],
       "@elewa-group/pages/elewa/social-impact": [
         "libs/pages/elewa/social-impact/src/index.ts"
+      ],
+      "@elewa-group/pages/elewa/venture-lab-detail": [
+        "libs/pages/elewa/venture-lab-detail/src/index.ts"
+      ],
+      "@elewa-group/pages/elewa/venture-labs": [
+        "libs/pages/elewa/venture-labs/src/index.ts"
       ],
       "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
       "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],

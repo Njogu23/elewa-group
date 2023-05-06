@@ -6,12 +6,59 @@
     <ng-content select="[mainPage]"></ng-content>
     <router-outlet></router-outlet>
   </div>
+  
   <div class="footer">
     <elewa-group-footer>
-      <div footer class="footer-content">
-        <h4>do you want to be part of our mission?</h4>
-        <div class="mission">
-          <elewa-group-button-with-animation [message]="'Become an investor'" [mode]="'dark'" [action]="'/'"></elewa-group-button-with-animation>
+      <div footer class="footer-content" [ngSwitch]="route">
+        <div *ngSwitchCase="'home'">
+          <!-- <div class="mission">
+            <h4>do you want to be part of our mission?</h4>
+            <elewa-group-button-with-animation
+              [message]="'Become an investor'"
+              [mode]="'dark'"
+              [action]="'/'"
+            ></elewa-group-button-with-animation>
+          </div> -->
+        </div>
+        <div *ngSwitchCase="'about'">
+          <!-- <div class="mission">
+            <h4>do you want to be part of our mission?</h4>
+            <elewa-group-button-with-animation
+              [message]="'Become an investor'"
+              [mode]="'dark'"
+              [action]="'/'"
+            ></elewa-group-button-with-animation>
+          </div> -->
+        </div>
+        <div *ngSwitchCase="'activities'">
+          <!-- <div class="mission">
+            <h4>do you want to be part of our mission?</h4>
+            <elewa-group-button-with-animation
+              [message]="'Become an investor'"
+              [mode]="'dark'"
+              [action]="'/'"
+            ></elewa-group-button-with-animation>
+          </div> -->
+        </div>
+        <div *ngSwitchCase="'social-impact'">
+          <!-- <div class="mission">
+            <h4>do you want to be part of our mission?</h4>
+            <elewa-group-button-with-animation
+              [message]="'Become an investor'"
+              [mode]="'dark'"
+              [action]="'/'"
+            ></elewa-group-button-with-animation>
+          </div> -->
+        </div>
+        <div *ngSwitchDefault>
+          <!-- <div class="mission">
+            <h4>do you want to be part of our mission?</h4>
+            <elewa-group-button-with-animation
+              [message]="'Become an investor'"
+              [mode]="'dark'"
+              [action]="'/'"
+            ></elewa-group-button-with-animation>
+          </div> -->
         </div>
       </div>
     </elewa-group-footer>

@@ -1,0 +1,35 @@
+<div class="banner-container">
+  <ng-container *ngFor="let teamMember of teamMembers; index as i">
+    <div class="banner" *ngIf="i === currentBannerIndex">
+      <div class="banner-image" [style.background-image]="'url(' + teamMember.imageLink + ')'"></div>
+      <div class="banner-info">
+        <h1>{{teamMember.name}}</h1>
+        <h2>{{teamMember.role}}</h2>
+        <p [innerHTML]="teamMember.summary" ></p>
+        <div class="linkedin-icon">
+          <a [href]="teamMember.linkedInUrl"><i class="fa-brands fa-linkedin-in">LinkedIn</i></a>
+        </div>
+      </div>
+      <div class="close-button-container">
+        <button class="close-button" (click)="closeTeamMemberView()">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </ng-container>
+  <div class="banner-controls">
+    <div class="previous-button">
+      <button class="fa-arrow-left-long" (click)="previousBanner()">
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </button>
+    </div>
+    <div class="next-button">  
+      <button class="fa-arrow-right-long" (click)="nextBanner()">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+    </div> 
+  </div>
+  <div class="progress-bar">
+    <div class="progress-bar-fill" [style.width.%]="progressPercentage"></div>
+  </div>
+</div>
